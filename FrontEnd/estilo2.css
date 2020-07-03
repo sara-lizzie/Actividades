@@ -1,0 +1,36 @@
+h1{
+    color:rgb(179, 240, 12);
+    font-size: 40px;
+    text-align: center;
+}    
+body{
+    background-color: rgba(1, 251, 135, 0.445);
+}    
+span{
+    background-color: coral;
+}
+.div-padre{
+   display: flex;
+   background-color: indigo;
+   align-items: center;
+   height: 500px;
+   flex-direction:row;
+   justify-content: space-around;
+}
+.div-hijo{
+    background-color: lawngreen;
+    color: pink;
+    font-size: 40px;
+    align-content: center;
+    margin: 10px;
+    padding: 30px 40px;
+    border: 10px solid coral;
+    text-align: center;
+    width: 20%;
+    height: 40%;
+}
+#imagen{
+    display:flex;
+    justify-content: center;
+    margin: 30px;
+}
