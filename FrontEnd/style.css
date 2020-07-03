@@ -1,0 +1,41 @@
+
+h1{
+    color:rgb(179, 240, 12);
+    font-size: 40px;
+    text-align: initial;
+}
+h2{
+    color:blue;
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    color:rgb(255, 22, 100);
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    color: orange;
+    font-size: 35px;
+    text-align: end;
+}
+body{
+    background-color: rgba(1, 251, 135, 0.445);
+}    
+#parrafo-violeta{
+    color:rgb(165, 36, 165);
+    font-size: 30;
+    text-align: right;
+    font-style: italic;
+}
+.parrafos-verdes{
+    color: rgb(0, 255, 0);
+    text-align: left;
+}
+ul{
+  list-style-type: square;
+}
+ol{
+    list-style: upper-alpha;
+}
