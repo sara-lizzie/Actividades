@@ -1,0 +1,1 @@
+console.log("Por favor tome de la bolsa uno a uno los 5 huevos y rellene la cajita.");
