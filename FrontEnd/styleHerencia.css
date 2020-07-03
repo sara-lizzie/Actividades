@@ -1,0 +1,42 @@
+h2.destacados{
+    background-color: chartreuse;
+}
+div p{
+    color: purple;
+}
+div p span{
+    background-color: rgb(255, 7, 131);
+}
+#div-destacado>p{
+    color:red;
+}
+p+h3{
+    color: teal;
+}
+p~h3{
+    background-color: orangered;
+}
+h2:hover{
+    color: fuchsia;
+}
+#h3-destacado,#p-destacado,#primer-parrafo{
+    color: yellow
+}
+body{
+    background-color: violet;
+}
+#h3-otroColor{
+    background-color: turquoise;
+}
+.h3{
+    background-color: tomato;
+}
+div a{
+    display:block;
+}
+#link-hover:hover{
+    color: green;
+}
+#link-active:active{
+    color: crimson;
+}
