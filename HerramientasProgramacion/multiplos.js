@@ -1,7 +1,8 @@
-let contador;
-
-for(contador=1;contador<=100;contador++){
-    if((contador % 2 == 0) || (contador % 3==0)){
-        console.log("Los multiplos de 2 y 3 son: ", contador);
-    }    
+let esMultiplo = (numero1,numero2) =>{
+    if(numero1%numero2==0){
+      return console.log(esMultiplo=true);
+    }else{
+       return console.log(esMultiplo=false);
+    }
 }
+console.log(esMultiplo(25,5));
