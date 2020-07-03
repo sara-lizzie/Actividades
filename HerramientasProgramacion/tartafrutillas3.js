@@ -1,0 +1,14 @@
+let readlineSync = require('readline-sync');
+let primerIngrediente = readlineSync.question("Por favor ingrese el primer ingrediente: ");
+let segundoIngrediente = readlineSync.question("Por favor ingrese el segundo ingrediente: ");
+let tercerIngrediente = readlineSync.question("Por favor ingrese el tercer ingrediente: ");
+let cuartoIngrediente = readlineSync.question("Por favor ingrese el cuarto ingrediente: ");
+let quintoIngrediente = readlineSync.question("Por favor ingrese el quinto ingrediente: ");
+let sextoIngrediente = readlineSync.question("Por favor ingrese el sexto ingrediente: ");
+let septimoIngrediente = readlineSync.question("Por favor ingrese el septimo ingrediente: ");
+let octavoIngrediente = readlineSync.question("Por favor ingrese el octavo ingrediente: ");
+let primerRecipiente = readlineSync.question("Por favor ingrese el primer recipiente: ");
+let segundoRecipiente = readlineSync.question("Por favor ingrese el segundo recipiente: ");
+let espacio = (", ");
+let tartafrutillas = primerIngrediente + espacio + segundoIngrediente + espacio + tercerIngrediente + espacio + cuartoIngrediente + espacio + quintoIngrediente + espacio + sextoIngrediente + espacio + septimoIngrediente + espacio + octavoIngrediente + espacio + primerRecipiente+ espacio + segundoRecipiente; 
+console.log("Los ingredientes que usted necesita par hacer una tarta de frutillas son: ", tartafrutillas);
