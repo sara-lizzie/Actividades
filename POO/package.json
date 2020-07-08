@@ -1,0 +1,19 @@
+{
+  "name": "poo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "servidor": "node Act1.js",
+    "servidor2": "node act2Parte1 & node act2Parte2",
+    "servidor3": "node sumaArreglos.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "readline-sync": "^1.4.10"
+  }
+}
