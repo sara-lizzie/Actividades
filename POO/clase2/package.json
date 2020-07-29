@@ -1,0 +1,20 @@
+{
+  "name": "clase2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "productoEscalar.js",
+  "scripts": {
+    "tarea": "node productoEscalar.js",
+    "tarea2": "tsc ejercicio2.ts & node ejercicio2.js",
+    "pruebaTxt": "tsc manejarTxt.ts & node manejarTxt.js",
+    "tarea3": "tsc ejercicio2Txt.ts & node ejercicio2Txt.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.23",
+    "readline-sync": "^1.4.10"
+  }
+}
