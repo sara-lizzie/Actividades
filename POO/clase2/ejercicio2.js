@@ -2,79 +2,77 @@
 exports.__esModule = true;
 var readlineSync = require("readline-sync");
 var dimension = readlineSync.questionInt("Ingrese el tamaño del arreglo:");
-var array = [];
-function insertar(array) {
+var arrayPalabras = [];
+function insertar(arrayPalabras) {
     for (var i = 0; i < dimension; i++) {
-        array[i] = readlineSync.question("Ingrese una palabra: ");
+        arrayPalabras[i] = readlineSync.question("Ingrese una palabra: ");
     }
 }
-console.log(insertar(array));
-function opciones(array) {
-    var opcion = readlineSync.question("Que opcion desea realizar? eliminar, buscar, actualizar, insertar mas o ver array? Inserte un '.' si quiere salir del programa: ");
-    if (opcion == "eliminar") {
-        console.log(eliminar(array));
-    }
-    else {
-        if (opcion == "buscar") {
-            console.log(buscar(array));
+function opciones(arrayPalabras) {
+    var opcion;
+    while (opcion != ".") {
+        opcion = readlineSync.question("Que opcion desea realizar? eliminar, buscar, actualizar, insertar mas o ver array? Inserte un '.' si quiere salir del programa: ");
+        if (opcion == "eliminar") {
+            console.log(eliminar(arrayPalabras));
         }
         else {
-            if (opcion == "actualizar") {
-                console.log(actualizar(array));
+            if (opcion == "buscar") {
+                console.log(buscar(arrayPalabras));
             }
             else {
-                if (opcion == "ver array") {
-                    console.log(verArray(array));
+                if (opcion == "actualizar") {
+                    console.log(actualizar(arrayPalabras));
                 }
                 else {
-                    if (opcion == "insertar mas") {
-                        console.log(insertarMas(array));
+                    if (opcion == "ver array") {
+                        console.log(verArray(arrayPalabras));
                     }
                     else {
-                        console.log("Adios.");
+                        if (opcion == "insertar mas") {
+                            console.log(insertarMas(arrayPalabras));
+                        }
                     }
                 }
             }
         }
     }
 }
-console.log(opciones(array));
 function eliminar(array) {
     var eliminarPalabra = readlineSync.question("¿Que palabra desea eliminar? ");
-    for (var i = 0; i < array.length; i++) {
-        if (eliminarPalabra == array[i]) {
-            array.splice(i, 1);
+    for (var i = 0; i < arrayPalabras.length; i++) {
+        if (eliminarPalabra == arrayPalabras[i]) {
+            arrayPalabras.splice(i, 1);
         }
     }
-    console.log(array);
-    console.log(opciones(array));
+    return arrayPalabras;
 }
-function buscar(array) {
+function buscar(arrayPalabras) {
     var buscarPalabra = readlineSync.question("¿Que palabra desea buscar? ");
-    for (var i = 0; i < array.length; i++) {
-        if (buscarPalabra == array[i]) {
-            console.log(array[i]);
+    for (var i = 0; i < arrayPalabras.length; i++) {
+        if (buscarPalabra == arrayPalabras[i]) {
+            console.log(arrayPalabras[i] + " esta en la posicion " + i + " del arreglo.");
         }
     }
-    return opciones(array);
 }
-function actualizar(array) {
+function actualizar(arrayPalabras) {
     var palabraActualizar = readlineSync.question("¿Que palabra desea actualizar? ");
-    for (var i = 0; i < array.length; i++) {
-        if (palabraActualizar == array[i]) {
-            array[i] = readlineSync.question("Agregue la nueva palabra: ");
+    for (var i = 0; i < arrayPalabras.length; i++) {
+        if (palabraActualizar == arrayPalabras[i]) {
+            arrayPalabras[i] = readlineSync.question("Agregue la nueva palabra: ");
         }
     }
-    console.log(array);
-    console.log(opciones(array));
+    return arrayPalabras;
 }
-function insertarMas(array) {
+function insertarMas(arrayPalabras) {
     var nuevaPalabra = readlineSync.question("Ingrese una nueva palabra: ");
-    array.push(nuevaPalabra);
-    console.log(array);
-    console.log(opciones(array));
+    while (nuevaPalabra != ".") {
+        arrayPalabras.push(nuevaPalabra);
+        nuevaPalabra = readlineSync.question("Ponga un punto cuando termine de ingresar palabras. Ingrese una nueva palabra: ");
+    }
+    return arrayPalabras;
 }
-function verArray(array) {
-    console.log(array);
-    console.log(opciones(array));
+function verArray(arrayPalabras) {
+    return arrayPalabras;
 }
+console.log(insertar(arrayPalabras));
+console.log(opciones(arrayPalabras));
